@@ -12,4 +12,6 @@ public class DepPrimRaizDos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dep_prim_raiz_dos);
     }
+
+
 }
