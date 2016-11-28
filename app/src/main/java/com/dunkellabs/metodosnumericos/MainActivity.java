@@ -1,5 +1,6 @@
 package com.dunkellabs.metodosnumericos;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,9 +23,23 @@ public class MainActivity extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.listaPrincipal);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, departamental);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_expandable_list_item_1, departamental);
         listView.setAdapter(adapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick( AdapterView<?> parent, View view, int position, long id)  {
+                switch(position){
+                    case 0:
+                        Intent primerDep = new Intent(MainActivity.this, DepPrim.class);
+                        startActivity(primerDep);
+                        break;
+
+                }
+
+
+            }
+        });
        
     }
 
