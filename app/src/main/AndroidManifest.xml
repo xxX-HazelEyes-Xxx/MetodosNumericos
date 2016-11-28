@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DepPrim"></activity>
+        <activity android:name=".com.dunkellabs.metodosnumericos.primerDepartamental.DepPrim" />
+        <activity android:name=".com.dunkellabs.metodosnumericos.primerDepartamental.DepPrimRaizDos"></activity>
     </application>
 
 </manifest>
